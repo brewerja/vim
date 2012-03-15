@@ -23,6 +23,9 @@ set number " Turn on line numbers.
 " Set F3 to toggle line numbers.
 nnoremap <F3> :set nonumber!<CR>:set foldcolumn=0<CR> 
 
+" Set F4 to toggle NERDTree view.
+nnoremap <F4> :NERDTreeToggle<CR>
+
 set ignorecase smartcase " Ignore case in searches unless a captial letter is used in query
 
 " Python Stuff
