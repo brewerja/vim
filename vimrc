@@ -1,3 +1,4 @@
+" Initialization for the pathogen plugin
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -38,3 +39,6 @@ set hidden
 
 " Set mouse on for all modes.
 set mouse=a
+
+" Change EasyMotion leader to a single leader.
+let g:EasyMotion_leader_key='<Leader>'
