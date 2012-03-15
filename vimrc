@@ -1,3 +1,7 @@
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " Minimal .vimrc settings
 " http://vimuniversity.com/samples/your-first-vimrc-should-be-nearly-empty
 set nocompatible " Use Vim settings, rather than Vi settings.
