@@ -1,1 +1,7 @@
 My vim configuration.
+
+To activate the vimrc file:
+    ln -s ~/.vim/vimrc ~/.vimrc
+
+To update all submodules:
+    git submodule foreach git pull origin master
