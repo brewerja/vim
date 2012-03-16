@@ -1,8 +1,7 @@
 My vim configuration.
 
-To activate the vimrc and gvimrc files:
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
+To activate the vimrc, gvimrc, and tmux.conf files:
+    sh slinks.sh
 
 To update all submodules:
     git submodule foreach git pull origin master
