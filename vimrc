@@ -47,4 +47,4 @@ let g:EasyMotion_leader_key='<Leader>'
 
 set ruler " Show location in the file at all times.
 set ignorecase smartcase " Ignore case in searches unless a captial letter is used in query
-set noeb vb t_vb=
+set noeb vb t_vb= " Turn off bells and beeps.
