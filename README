@@ -1,11 +1,7 @@
 My vim configuration.
 
-To activate the vimrc, gvimrc, and tmux.conf files:
-    sh slinks.sh
-
-To initialize all pathogen enabled plugins:
-    git submodule init
-    git submodule update
+To activate the config files and populate the contents of the submodules:
+    sh configure
 
 To update all submodules:
     git submodule foreach git pull origin master
