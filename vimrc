@@ -48,6 +48,9 @@ let g:EasyMotion_leader_key='<Leader>'
 " Clear last search highlighting with space.
 nnoremap <Space> :noh<CR> 
 
+" Turn on incremental search
+set incsearch
+
 set ruler " Show location in the file at all times.
 set ignorecase smartcase " Ignore case in searches unless a captial letter is used in query
 set noeb vb t_vb= " Turn off bells and beeps.
