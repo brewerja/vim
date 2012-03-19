@@ -16,7 +16,7 @@ nnoremap <F2> :set invpaste paste?<CR> " Pressing F2 in normal node will invert 
 set pastetoggle=<F2> " Press F2 in insert mode toggles 'paste' on and off.  set showmode " Enables displaying whether 'paste' is turned on in insert mode.
 
 set background=dark
-colorscheme darkspectrum
+colorscheme molokai
 
 set number " Turn on line numbers.
 " Set F3 to toggle line numbers.
@@ -25,7 +25,8 @@ nnoremap <F3> :set nonumber!<CR>:set foldcolumn=0<CR>
 " Set F4 to toggle NERDTree view.
 nnoremap <F4> :NERDTreeToggle<CR>
 
-" Set F6 to toggle source tree.  nnoremap <F6> :TlistToggle<CR>
+" Set F6 to toggle source tree.
+nnoremap <F6> :TlistToggle<CR>
 
 " Python Stuff
 " http://dancingpenguinsoflight.com/2009/02/python-and-vim-make-your-own-ide/
