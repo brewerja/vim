@@ -25,8 +25,13 @@ nnoremap <F3> :set nonumber!<CR>:set foldcolumn=0<CR>
 " Set F4 to toggle NERDTree view.
 nnoremap <F4> :NERDTreeToggle<CR>
 
-" Set F6 to toggle source tree.
-nnoremap <F6> :TlistToggle<CR>
+" F5 is execute if current file is in Python.
+
+" Set F6 to run PEP8 check.
+let g:pep8_map='<F6>'
+
+" Set F7 to toggle source tree.
+nnoremap <F7> :TlistToggle<CR>
 
 " Python Stuff
 " http://dancingpenguinsoflight.com/2009/02/python-and-vim-make-your-own-ide/
