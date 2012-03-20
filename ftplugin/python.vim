@@ -6,5 +6,9 @@ setlocal smarttab
 setlocal expandtab
 set nosmartindent
 
-" Execute file being edited with <Shift> + e:
+" Execute file being edited with <F5>
 map <buffer> <F5> :w<CR>:!/usr/bin/env python % <CR>
+
+" Highlights anything over 79 chars in red
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%80v.\+/
