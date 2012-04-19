@@ -5,3 +5,6 @@ To activate the config files and populate the contents of the submodules:
 
 To update all submodules:
     git submodule foreach git pull origin master
+
+To add a new submodule:
+    git submodule add https://github.com/user/repo.git bundle/repo-name
