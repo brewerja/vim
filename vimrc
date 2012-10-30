@@ -8,6 +8,7 @@ call pathogen#helptags()
 set nocompatible " Use Vim settings, rather than Vi settings.
 set backspace=indent,eol,start " Make backspace behave in a sane manner.
 syntax on " Switch syntax highlighting on.
+filetype off " Needed to load ftdetect files from pathogen
 filetype plugin indent on " Enable file type detection and do language-dependent indenting.
 
 " Toggle auto-indenting for code paste.
@@ -48,9 +49,6 @@ set hidden
 " Set mouse on for all modes.
 set mouse=a
 
-" Change EasyMotion leader to a single leader.
-let g:EasyMotion_leader_key='<Leader>'
-
 " Clear last search highlighting with space.
 nnoremap <Space> :noh<CR> 
 
@@ -60,3 +58,16 @@ set incsearch hlsearch
 set ruler " Show location in the file at all times.
 set ignorecase smartcase " Ignore case in searches unless a captial letter is used in query
 set noeb vb t_vb= " Turn off bells and beeps.
+
+" Settings for C programming
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+autocmd QuickFixCmdPost * :cwindow
+
+" On window splits, open new buffers to the right and below
+set splitright
+set splitbelow
+
+set lines=50 columns=85
