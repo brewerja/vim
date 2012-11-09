@@ -71,3 +71,6 @@ set splitright
 set splitbelow
 
 set lines=50 columns=85
+
+" Go formatting
+autocmd BufWritePost *.go :silent Fmt
