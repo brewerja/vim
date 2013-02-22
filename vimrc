@@ -36,7 +36,7 @@ nnoremap <F7> :TlistToggle<CR>
 
 " Python Stuff
 " http://dancingpenguinsoflight.com/2009/02/python-and-vim-make-your-own-ide/
-autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,( " Python syntax highlighting
+autocmd FileType python set complete+=k~/.vim/syntax/python.vim "isk+=.,( " Python syntax highlighting
 " Good advice on ftplugin/python.vim here http://henry.precheur.org/vim/python.html
 
 " http://vimcasts.org/episodes/show-invisibles/
@@ -70,7 +70,11 @@ autocmd QuickFixCmdPost * :cwindow
 set splitright
 set splitbelow
 
-set lines=50 columns=85
-
 " Go formatting
 autocmd BufWritePost *.go :silent Fmt
+
+" Powerline Settings
+set laststatus=2
+set encoding=utf-8
+let g:Powerline_symbols = 'fancy'
+set guifont=Liberation\ Mono\ 11
