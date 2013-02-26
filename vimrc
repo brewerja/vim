@@ -47,7 +47,10 @@ set listchars=tab:▸\ ,eol:¬ " Use the same symbols as TextMate for tabstops a
 set hidden
 
 " Set mouse on for all modes.
-set mouse=a
+set mouse+=a
+
+" Allow splits to be resized inside Tmux
+set ttymouse=xterm2
 
 " Clear last search highlighting with space.
 nnoremap <Space> :noh<CR> 

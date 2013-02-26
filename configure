@@ -4,3 +4,4 @@ ln -s ~/.vim/gvimrc ~/.gvimrc
 ln -s ~/.vim/tmux.conf ~/.tmux.conf
 git submodule init
 git submodule update
+git config --global core.editor /usr/bin/vim

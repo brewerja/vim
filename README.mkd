@@ -11,3 +11,10 @@ To update all submodules:
 To add a new submodule:
 
     git submodule add https://github.com/user/repo.git bundle/repo-name
+
+To delete a submodule:
+
+1. Delete the relevant section from the .gitmodules file.
+2. Delete the relevant section from .git/config.
+3. Run `git rm --cached path_to_submodule`.
+4. Commit and delete the now untracked submodule files.
