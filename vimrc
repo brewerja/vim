@@ -67,7 +67,6 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-autocmd QuickFixCmdPost * :cwindow
 
 " On window splits, open new buffers to the right and below
 set splitright
@@ -81,3 +80,8 @@ set laststatus=2
 set encoding=utf-8
 let g:Powerline_symbols = 'fancy'
 set guifont=Liberation\ Mono\ 11
+
+" Ack Settings
+nnoremap <silent> <C-j> :cn<CR>
+nnoremap <silent> <C-k> :cp<CR>
+noremap <leader>a :Ack! 
