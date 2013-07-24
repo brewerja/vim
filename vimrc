@@ -1,6 +1,6 @@
 " Initialization for the pathogen plugin
 runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#runtime_append_all_bundles()
+call pathogen#incubate()
 call pathogen#helptags()
 
 " Minimal .vimrc settings
@@ -19,7 +19,7 @@ set pastetoggle=<F2> " Press F2 in insert mode toggles 'paste' on and off.  set 
 set background=dark
 colorscheme molokai
 
-set number " Turn on line numbers.
+set relativenumber " Turn on line numbers.
 " Set F3 to toggle line numbers.
 nnoremap <F3> :set nonumber!<CR>:set foldcolumn=0<CR> 
 
