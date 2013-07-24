@@ -85,3 +85,14 @@ set guifont=Liberation\ Mono\ 11
 nnoremap <silent> <C-j> :cn<CR>
 nnoremap <silent> <C-k> :cp<CR>
 noremap <leader>a :Ack! 
+
+" Swap mark triggers
+nnoremap ` '
+nnoremap ' `
+
+"Ignore .pyc files for CtrlP
+set wildignore=*.pyc,*.swp,*.class
+
+" Set the max files
+let g:ctrlp_max_files = 10000
+"https://gist.github.com/mitchellh/ee14d6ecb9196a07da56
