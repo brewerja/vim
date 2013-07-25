@@ -21,7 +21,7 @@ colorscheme molokai
 
 set relativenumber " Turn on line numbers.
 " Set F3 to toggle line numbers.
-nnoremap <F3> :set nonumber!<CR>:set foldcolumn=0<CR> 
+nnoremap <F3> :set norelativenumber!<CR>:set foldcolumn=0<CR> 
 
 " Set F4 to toggle NERDTree view.
 nnoremap <F4> :NERDTreeToggle<CR>
@@ -122,3 +122,16 @@ else
   map <C-k> <C-w>k
   map <C-l> <C-w>l
 endif
+
+" Reposition the window on jumps to things at the edge.
+set scrolloff=10
+
+" Move to the cursor position above, even if on the same line.
+nnoremap j gj
+nnoremap k gk
+
+nnoremap gj j
+nnoremap gk k
+
+"Make :s :%s get all occurences in lines, rather than just the first
+set gdefault

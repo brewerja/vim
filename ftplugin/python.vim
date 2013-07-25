@@ -12,3 +12,5 @@ map <buffer> <F5> :w<CR>:!/usr/bin/env python % <CR>
 " Highlights anything over 79 chars in red
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%80v.\+/
+
+set colorcolumn=80
