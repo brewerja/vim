@@ -135,3 +135,5 @@ nnoremap gk k
 
 "Make :s :%s get all occurences in lines, rather than just the first
 set gdefault
+
+let g:hardtime_default_on = 1
