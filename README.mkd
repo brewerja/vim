@@ -1,4 +1,4 @@
-#My Vim Configuration
+# My Vim Configuration
 
 To activate the config files and populate the contents of the submodules:
 
